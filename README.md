@@ -1,1 +1,0 @@
-# Information-systems-programming-technologies
