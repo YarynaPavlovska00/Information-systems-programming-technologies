@@ -20,4 +20,4 @@
     #### Команда для синхронізації локальної версії з Web:
           "git pull"
 10. Картинка: 
-    ![alt text](https://pm1.narvii.com/6611/06e3cef692800895d5524024e91a08f9c2ef090e_hq.jpg "Picture")
+    ![alt text](hq.jpg "Picture")
