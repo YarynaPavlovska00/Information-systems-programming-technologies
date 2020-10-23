@@ -25,10 +25,21 @@ def how_to_write_logs():
     logger.error("Це повідомлення про помилку")
 
 
+def function():
+    try:
+        arr = ["a", "b", "c"]
+        print(arr[4])
+    except IndexError:
+        logger.error("Error message!")
+    else:
+        logger.info("Information message!")
+    finally:
+        print("Result!")
+
 if __name__ == '__main__':
     args = parser.parse_args()
     if args.logs:
         how_to_write_logs()
     else:
         main(args.opt)
-
+function()
