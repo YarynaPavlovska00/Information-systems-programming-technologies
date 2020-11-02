@@ -17,6 +17,8 @@ def check_time(d):
         print("Time is: ", d['time'])
     try:
         print("Date is: ", d['date'])
+        home_work(d["time"])
+
     except KeyError:
         print("No date in response!!!")
         raise KeyError
@@ -38,15 +40,15 @@ def main(url=''):
         check_time(get_time_if_url_not_work())
     return True
 
-
 def home_work(time):
     if time[-2::] == 'PM':
         print('Good night!')
-        return None
+        return True
     elif time[-2::]=='AM':
         print('Good day!.')
-        return None
-    raise Exception('Error: time:' + str(time))
+        return True
+    else:
+        raise Exception('Error: time:' + str(time))
 
 
 if __name__ == "__main__":

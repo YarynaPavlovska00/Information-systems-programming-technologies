@@ -5,6 +5,7 @@ No URL passed to function
 Результат з правильною URL:
 Time is:  01:17:19 PM
 Date is:  11-02-2020
+Good night!
 =========================================== test session starts ============================================
 platform linux -- Python 3.8.1, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
 rootdir: /home/yaryna/Git/Information-systems-programming-technologies/Lab_2
@@ -13,3 +14,19 @@ collected 4 items
 tests/tests.py ....                                                                                  [100%]
 
 ============================================ 4 passed in 0.84s =============================================
+========================================
+Результат без параметрів: 
+No URL passed to function
+========================================
+Результат з правильною URL: 
+Time is:  02:52:10 PM
+Date is:  11-02-2020
+Good night!
+========================================
+Результат без параметрів: 
+No URL passed to function
+========================================
+Результат з правильною URL: 
+Time is:  02:53:10 PM
+Date is:  11-02-2020
+Good night!

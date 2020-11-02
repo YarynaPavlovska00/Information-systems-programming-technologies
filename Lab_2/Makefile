@@ -1,19 +1,26 @@
-.DEFAULT_GOAL := all
+DEFAULT_GOAL := all
 
 all: install test run deploy
 
 install:
-	@echo "Installing pipenv and dependencies."
-	# Ваш код тут
+	@echo "Install pipenv"
+	pip3 install pipenv
+	pipenv --python 3.8
+	pipenv install requests
+	pipenv install ntplib
+	pipenv install pytest
+
 
 test:
-	@echo "Start tests."
-	# Ваш код тут
+	@echo "Start tests"
+	pipenv run pytest tests/tests.py >> results.txt
 
 run:
-	@echo "Run Python app."
-	# Ваш код тут
+	@echo "Run Python app"
+	pipenv run python3 app.py >> results.txt
 
 deploy:
-	@echo "Adding and Committing results.txt to git."
-	# Ваш код тут
+	@echo "Add and commit results.txt to git"
+	git add results.txt
+	git commit -m "Commit!!"
+	git push origin main

@@ -25,10 +25,6 @@ class TestClass(unittest.TestCase):
         time_a = ['AM', '123 PM', 'am', 'pm', '21', '']
         for b in time_a:
             try:
-                home_work(b)
+                self.assertEqual(home_work(b), True)
             except Exception as e:
                 self.assertEqual(str(e), "Error: time:" + b)
-            except:
-                self.assertTrue(True)
-            else:
-                self.assertTrue(True)
