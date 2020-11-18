@@ -1,6 +1,7 @@
 import requests
 import json
 import logging
+import time
 
 logging.basicConfig(
     filename="server.log",
@@ -13,13 +14,19 @@ log = logging.getLogger(__name__)
 
 
 def main(url):
-    r = requests.get(url)
-    data = json.loads(r.content)
-    logging.info("Сервер доступний. Час на сервері: %s", data['date'])
-    logging.info("Запитувана сторінка: : %s", data['current_page'])
-    logging.info("Відповідь сервера місти наступні поля:")
-    for key in data.keys():
-        logging.info("Ключ: %s, Значення: %s", key, data[key])
+    while True:
+        try:
+            r = requests.get(url)
+            data = json.loads(r.content)
+            logging.info("Сервер доступний. Час на сервері: %s", data['date'])
+            logging.info("Запитувана сторінка: : %s", data['current_page'])
+            logging.info("Відповідь сервера місти наступні поля:")
+            for key in data.keys():
+                logging.info("Ключ: %s, Значення: %s", key, data[key])
+        except Exception as e:
+            logging.error(F'Error, website is not working: {e}')
+        time.sleep(60)
+
 
 
 if __name__ == '__main__':

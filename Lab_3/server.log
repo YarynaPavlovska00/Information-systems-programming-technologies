@@ -1,7 +1,16 @@
-INFO 2019-09-29 17:42:32,900 root : Сервер доступний. Час на сервері: test1
-INFO 2019-09-29 17:42:32,900 root : Запитувана сторінка: : test2
-INFO 2019-09-29 17:42:32,900 root : Відповідь сервера місти наступні поля:
-INFO 2019-09-29 17:42:32,900 root : Ключ: date, Значення: test1
-INFO 2019-09-29 17:42:32,900 root : Ключ: current_page, Значення: test2
-INFO 2019-09-29 17:42:32,900 root : Ключ: server_info, Значення: test3
-INFO 2019-09-29 17:42:32,901 root : Ключ: client_info, Значення: test4
+INFO 2020-11-18 17:26:48,503 root : Сервер доступний. Час на сервері: 2020-11-18
+INFO 2020-11-18 17:26:48,504 root : Запитувана сторінка: : http://localhost:8000/health/
+INFO 2020-11-18 17:26:48,504 root : Відповідь сервера місти наступні поля:
+INFO 2020-11-18 17:26:48,504 root : Ключ: date, Значення: 2020-11-18
+INFO 2020-11-18 17:26:48,504 root : Ключ: current_page, Значення: http://localhost:8000/health/
+INFO 2020-11-18 17:26:48,504 root : Ключ: server_info, Значення: localhost
+INFO 2020-11-18 17:26:48,504 root : Ключ: client_info, Значення: {'user_agent': 'python-requests/2.18.4', 'user_ip': '127.0.0.1'}
+ERROR 2020-11-18 17:27:16,556 root : Error, website is not working: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4a1aa80da0>: Failed to establish a new connection: [Errno 111] Connection refused',))
+INFO 2020-11-18 17:36:41,245 root : Сервер доступний. Час на сервері: 2020-11-18
+INFO 2020-11-18 17:36:41,245 root : Запитувана сторінка: : http://localhost:8000/health/
+INFO 2020-11-18 17:36:41,245 root : Відповідь сервера місти наступні поля:
+INFO 2020-11-18 17:36:41,246 root : Ключ: date, Значення: 2020-11-18
+INFO 2020-11-18 17:36:41,246 root : Ключ: current_page, Значення: http://localhost:8000/health/
+INFO 2020-11-18 17:36:41,246 root : Ключ: server_info, Значення: localhost
+INFO 2020-11-18 17:36:41,246 root : Ключ: client_info, Значення: {'user_agent': 'python-requests/2.18.4', 'user_ip': '127.0.0.1'}
+ERROR 2020-11-18 17:44:07,350 root : Error, website is not working: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9f7cd929d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
