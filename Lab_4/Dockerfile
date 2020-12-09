@@ -1,6 +1,6 @@
-FROM python:3.7-slim
+FROM python:3.8-slim
 
-LABEL author="Bohdan"
+LABEL author="Yaryna"
 LABEL version=1.0
 
 # оновлюємо систему
@@ -13,11 +13,11 @@ RUN apt-get install git -y && pip install pipenv
 WORKDIR /lab
 
 # Завантажуємо файли з Git
-RUN git clone https://github.com/BobasB/devops_course.git
+RUN git clone https://github.com/YarynaPavlovska00/Information-systems-programming-technologies
 
 # Створюємо остаточну робочу папку з Веб-сайтом та копіюємо туди файли
 WORKDIR /app
-RUN cp -r /lab/devops_course/lab3/* .
+RUN cp -r /lab/Information-systems-programming-technologies/Lab_3/* .
 
 # Інсталюємо всі залежності
 RUN pipenv install
