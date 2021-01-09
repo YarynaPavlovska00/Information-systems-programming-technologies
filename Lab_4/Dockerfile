@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.8.7-slim
 
 LABEL author="Yaryna"
 LABEL version=1.0
