@@ -17,7 +17,7 @@ RUN git clone https://github.com/YarynaPavlovska00/Information-systems-programmi
 
 # Створюємо остаточну робочу папку з Веб-сайтом та копіюємо туди файли
 WORKDIR /app
-RUN cp -r /lab/Information-systems-programming-technologies/Lab_3/* .
+RUN cp -r ../lab/Information-systems-programming-technologies/Lab_3/* .
 
 # Інсталюємо всі залежності
 RUN pipenv install
