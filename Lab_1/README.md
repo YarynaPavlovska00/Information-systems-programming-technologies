@@ -21,3 +21,7 @@
           "git pull"
 10. Картинка: 
     ![alt text](hq.jpg "Picture")
+    
+    
+    
+    //
