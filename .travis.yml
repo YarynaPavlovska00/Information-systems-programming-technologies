@@ -31,7 +31,7 @@ jobs:
         - docker build -t pavlovska/information_systems_programming_technologies:django-travis .
         - docker images
         - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-        - docker pavlovska/information_systems_programming_technologies:django-travis
+        - docker push pavlovska/information_systems_programming_technologies:django-travis
     - stage: "Build Lab 5."
       name: "Build and run Docker images via make"
       services:
